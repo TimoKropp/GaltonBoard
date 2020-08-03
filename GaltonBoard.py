@@ -1,5 +1,6 @@
 import pygame
 import random
+import os
 # Define some colors
 black    = (   0,   0,   0)
 white    = ( 255, 255, 255)
@@ -10,6 +11,8 @@ size = 300          #window size, width = size/2, hight = size
 level = 500         #ground level to draw bars
 width = 1           #width of a bar
 clock_tick = 100    #clock tick, simulation speed
+
+os.environ["DISPLAY"]
 
 class Ball():
     def __init__(self, x, y, rad):    
