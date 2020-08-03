@@ -12,13 +12,6 @@ level = 500         #ground level to draw bars
 width = 1           #width of a bar
 clock_tick = 100    #clock tick, simulation speed
 
-os.environ['ETS_TOOLKIT']='null'
-
-try:
-    os.environ["DISPLAY"]
-except:
-    os.environ["SDL_VIDEODRIVER"] = "dummy"
-
 class Ball():
     def __init__(self, x, y, rad):    
         self.x = x
