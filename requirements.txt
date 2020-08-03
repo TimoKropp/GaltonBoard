@@ -5,5 +5,4 @@
 #    pip-compile
 #
 
-pygame
-random
+pygame == 1.9.6
