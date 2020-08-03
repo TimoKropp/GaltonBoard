@@ -42,7 +42,7 @@ class Bar():
 
 
 ### Initializing ###
-pygame.init()
+pygame.display.init()
 w_h = [size,2*size]
 screen = pygame.display.set_mode(w_h)
 pygame.display.set_caption("Galton Animation")
@@ -81,5 +81,5 @@ while stop == False: # check for exit
  
     clock.tick(clock_tick)
     pygame.display.flip()
-
-pygame.quit()
+    
+pygame.display.quit()
