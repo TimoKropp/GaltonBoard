@@ -13,7 +13,7 @@ width = 1           #width of a bar
 clock_tick = 100    #clock tick, simulation speed
 
 try:
-    os.environ["DISPLAY"]
+    os.environ["DISPLAY"]=':1.0'
 except:
     os.environ["SDL_VIDEODRIVER"] = "dummy"
 
