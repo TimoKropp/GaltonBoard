@@ -4,7 +4,7 @@ import os
 # Define some colors
 black    = (   0,   0,   0)
 white    = ( 255, 255, 255)
-
+# commit test # 
 rad = 1             #radius for a ball
 N_Balls = 5000      #number of balls
 size = 300          #window size, width = size/2, hight = size
