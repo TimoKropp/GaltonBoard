@@ -41,7 +41,7 @@ class Bar():
         pygame.draw.line(self.screen, white, [self.pos, self.level],[self.pos, self.level-self.h], self.width)
 
 
-### Initializing ###
+# Initializing 
 pygame.display.init()
 w_h = [size,2*size]
 screen = pygame.display.set_mode(w_h)
@@ -51,17 +51,17 @@ clock = pygame.time.Clock()
 Balls = []
 Bars=[]
 
-## Create Balls ###
+# Create Balls 
 for k in range(0,N_Balls):
         x=int(size/2)
         y=1-(N_Balls-k)
         Balls.append(Ball(x,y,rad))
 
-### create Bars ###        
+# Create Bars       
 for j in range(0,size):
     Bars.append(Bar(level,width,j,0))
 
-#### Loop ####
+# Loop 
 while stop == False: # check for exit
     for event in pygame.event.get(): # User did something
         if event.type == pygame.QUIT: # If user clicked close
