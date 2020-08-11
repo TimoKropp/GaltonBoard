@@ -56,7 +56,7 @@ BarsRed = []
 BarsBlue = []
 
 pygame.display.init()
-w_h = [size,2 * size] # aspect ration: height = 2 * width
+w_h = [size, 2 * size] # aspect ration: height = 2 * width
 screen = pygame.display.set_mode(w_h)
 pygame.display.set_caption("Galton Animation")
 stop = False
@@ -69,7 +69,7 @@ for k in range(0, N_Balls):
     Balls.append(Ball( x, y, rad))
 
 # create Bars       
-for j in range(0,size):
+for j in range(0, size):
     BarsRed.append(Bar(level_red, width, j, 0,  red))   # init Bars with 0 height: creates horizontal line at level_red
     BarsBlue.append(Bar(level_blue, width, j, 0, blue)) # init Bars with 0 height: creates horizontal line at level_blue
 
@@ -81,7 +81,7 @@ while stop == False:                    # check for exit
             
     screen.fill(black)
     
-    for b in range(0,N_Balls):              # draw and move every Ball
+    for b in range(0, N_Balls):              # draw and move every Ball
         Balls[b].draw(screen)
         Balls[b].move()
             
