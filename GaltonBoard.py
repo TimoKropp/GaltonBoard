@@ -5,7 +5,7 @@ import os
 # simulation settings
 rad         =  1            # radius of a Ball
 N_Balls     = 3000          # number of Balls
-size        = 300           # window size, width = size/2, hight = size
+size        = 300           # window size, width = size/2, height = size
 width       = 2             # width of a bar
 clock_tick  = 100           # clock tick, simulation speed
 level_red   = 300           # level to trap and count Balls in red (y-position in window)
